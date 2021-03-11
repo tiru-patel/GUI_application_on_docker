@@ -19,3 +19,8 @@ But, when we launch a container, we don’t have Xserver configured here, so wha
 :pushpin: Also, we have to run container with host network. 
 
           --net=host
+
+
+### 🎯 Run the docker container using command :dart:
+
+         docker run --net=host --env="DISPLAY" --volume="$HOME/.Xauthority:/root/.Xauthority:rw" <image_name>
